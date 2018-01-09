@@ -1,0 +1,22 @@
+@mixin logo($height, $width, $pos) {
+    height: $height;
+    width: $width;
+    position: $pos;
+}
+@mixin submenu($width, $left, $height, $pos: absolute, $display: none, $background: white) {
+    position: $pos;
+    display: $display;
+    background: $background;
+    width: $width;
+    left: $left;
+    height: $height;
+}
+@mixin submenu-li($pos: absolute, $left: -35px, $width: 156px) {
+    position: $pos;
+    left: $left;
+    width: $width;
+}
+@mixin hoversub($display: block, $z-index: 2) {
+    display: $display;
+    z-index: $z-index;
+}

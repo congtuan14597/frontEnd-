@@ -1,0 +1,103 @@
+DOCTYPE 
+html 
+head
+    title Jade-Scss
+    link(rel="stylesheet", href="styles/main.css")
+    script(src="js/slider.js")
+    script(src="https://code.jquery.com/jquery-3.2.1.js"
+           integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+           crossorigin="anonymous")
+    != getBlock('scripts').toHTML()
+body 
+    .container  
+        .header 
+            .logo 
+                a(href="#") DEALSY
+            .nav 
+                ul.nav-item 
+                    li
+                        a.home(href="#") Home 
+                        span
+                            img.icon(src="images/down-red.png", alt="")
+                        ul.sub-menu1 
+                            li Home Deals V1 
+                            li Home Deals V2 
+                    li 
+                        a.item(href="#") Coupons&Deals
+                        span
+                            img.icon(src="images/down-arrow.png", alt="")
+                        ul.sub-menu2 
+                            li Category 
+                            li Store 
+                            li Store Single 
+                            li Submit Coupon 
+                    li 
+                        a.item(href="#") Blog 
+                    li 
+                        a.item(href="#") Admin 
+                        span
+                            img.icon(src="images/down-arrow.png", alt="")
+                        ul.sub-menu3  
+                            li Dashboad 
+                            li User Profile 
+                            li Submit Coupon 
+                            li Login 
+                    li
+                        a(href="#")
+                            img.icon-search(src="images/search.png", alt="")
+                        .container-search 
+                            input(type="text" placeholder="Search...")
+                            button
+                                img(src="images/button.png", alt="")
+            .icon-down  
+                img(src="images/down-arrow.png", alt="")   
+
+        .content
+            .background
+                img.img(src="images/pc.png", alt="")
+            .subtitle
+                h1 Best Deals & Coupons
+                p 
+                    |We have 12569 offers from 6122 stores
+                    br
+                    |Start saving now
+            .container-content 
+                .event 
+                    .bbc 
+                        p
+                            |Browse By Catergory
+                            span
+                                img.img-icon(src="images/down-white.png", alt="")
+                    .search 
+                        input(type="text" placeholder="Search for store" )
+                    .btn2 
+                        button SEARCH
+
+        .footer 
+            .left 
+                img.prev(src="images/left-arrow.png", alt="")
+            .section 
+                ul 
+                    li 
+                        a(href="#") 
+                            img.slide(src="images/1.jpg", alt="")
+                    li
+                        a(href="#")
+                            img.slide(src="images/2.jpg", alt="")
+                    li
+                        a(href="#") 
+                            img.slide(src="images/1.jpg", alt="")
+                    li
+                        a(href="#")
+                            img.slide(src="images/3.jpg", alt="")
+                    li
+                        a(href="#")
+                            img.slide(src="images/2.jpg", alt="")
+                    li
+                        a(href="#")
+                            img.slide(src="images/3.jpg", alt="")
+                    //- li 
+                    //-     a(href="#") 
+                    //-         img.slide(src="images/1.jpg", alt="")
+            .right 
+                img.next(src="images/right-arrow.png", alt="")

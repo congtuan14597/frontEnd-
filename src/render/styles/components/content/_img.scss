@@ -1,0 +1,25 @@
+.background {
+  .img {
+      width: 100%;
+      filter: url(#blur); 
+      filter: blur(1.5px);
+      z-index: 1;  
+  }
+}
+.subtitle {
+  position: absolute;
+  top: 120px;
+  left: 300px;
+  color: $cl-white;
+  h1 {
+      font-size: 60px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+  }
+  p {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+  }
+}

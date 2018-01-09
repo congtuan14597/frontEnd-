@@ -1,0 +1,11 @@
+.icon-down {
+    @include logo(50px, 50px, relative);
+    float: right;
+    background: #eceff1;
+    img {
+        position: relative;
+        height: 25px;
+        right: -13px;
+        top: 12px;
+    }
+}

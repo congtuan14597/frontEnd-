@@ -1,0 +1,12 @@
+.logo {
+    position: absolute;
+    line-height: 100px;
+    left: 60px;
+    a {
+        text-decoration: none;
+        color: $cl-red;
+        font-size: 25px;
+        font-weight: 700;
+        border: 2px solid #f95669;
+    }
+}

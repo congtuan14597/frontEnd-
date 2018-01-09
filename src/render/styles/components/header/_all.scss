@@ -1,0 +1,24 @@
+@import 'button';
+@import 'logo';
+@import 'nav_item';
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: relative;
+    height: 100px;
+}
+.home {
+    color: $cl-red;
+}
+.item {
+    color: $cl-black;
+}
+.icon {
+    height: 10px;
+}

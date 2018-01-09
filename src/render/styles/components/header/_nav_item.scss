@@ -1,0 +1,105 @@
+.nav {
+    ul.nav-item {
+        position: absolute;
+        margin-left: 550px;
+        li {
+            position: relative;
+            display: inline-table;
+            margin-left: 60px;
+            line-height: 40px;
+            top: 30px;
+            &:hover {
+                .sub-menu1 {
+                    @include hoversub();
+                }
+                .sub-menu2 {
+                    @include hoversub();
+                }
+                .sub-menu3 {
+                    @include hoversub();
+                }
+                .container-search {
+                    @include hoversub();
+                    position: absolute;
+                }
+            }
+            a {
+                text-decoration: none;
+                letter-spacing: 0.05em;
+                font-weight: 500;
+                font-size: 18px;
+                &:hover {
+                    color: $cl-red;
+                }
+            }
+        }
+    }
+}
+.icon-search {
+    position: absolute;
+    text-align: center;
+    height: 35px;
+    top: -23px;
+    right: -30px;
+    padding: 7px;
+    border: 1px solid #f95669;
+    border-radius: 4px;
+}
+.sub-menu1 {
+    @include submenu(200px, -127px, 125px, absolute, none, white);
+    li {
+        @include submenu-li();
+        &:hover {
+            background: #f7f7f9;
+        }
+    }
+}
+.sub-menu2 {
+    @include submenu(200px, -42px, 200px, absolute, none, white);
+    li {
+        @include submenu-li();
+        &:hover {
+            background: #f7f7f9;
+        }
+    }
+}
+.sub-menu3 {
+    @include submenu(200px, -40px, 200px, absolute, none, white);
+    li {
+        @include submenu-li();
+        &:hover {
+            background: #f7f7f9;
+        }
+    }
+}
+.container-search {
+    @include logo(75px, 330px, relative);
+    display: none;
+    top: 33px;
+    right: -26px;
+    padding: 10px;
+    background: white;
+    input {
+      @include logo(50px, 245px, absolute);
+      right: 29px;
+      left: 20px;
+      border: 1px solid #ccccb3;
+      border-radius: 3px;
+    }
+    button {
+      @include logo(50px, 50px, absolute);
+      right: 22px;
+      border: 1px solid #ccccb3;
+      border-radius: 3px;
+      background: #f95669;
+      img {
+        height: 20px;
+      }
+    }
+}
+.container-search input::-webkit-input-placeholder {
+    color: #333;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    padding-left: 15px;
+}
